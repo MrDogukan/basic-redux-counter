@@ -7,7 +7,7 @@ import {
 } from "../../redux/actions/counterActions";
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
+  const counter = useSelector((state) => state.counterReducer.counter);
   return (
     <div className="app">
       <h2 className="counter-header">Counter With Redux</h2>
